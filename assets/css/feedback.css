@@ -1,0 +1,67 @@
+body {
+    background: #0f172a;
+    font-family: Arial;
+    color: white;
+}
+
+.feedback-box {
+    width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #020617;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+.stars {
+    direction: rtl;
+    font-size: 35px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    color: #444;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    background: #020617;
+    color: white;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+}

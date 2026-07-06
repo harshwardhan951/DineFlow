@@ -1,0 +1,103 @@
+/* ===== GLOBAL ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ===== CARD DESIGN ===== */
+.card {
+    background: #020617;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e5e7eb;
+    margin-bottom: 6px;
+}
+
+.card span,
+.card small {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+/* ===== ORDER STATUS COLORS ===== */
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.status.Pending {
+    background: #facc15;
+    color: #020617;
+}
+
+.status.Accepted {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.status.Completed {
+    background: #22c55e;
+    color: #020617;
+}
+
+.status.Cancelled {
+    background: #ef4444;
+    color: #020617;
+}
+
+/* ===== PROFILE UI ===== */
+.profile-card {
+    background: #020617;
+    border-radius: 18px;
+    padding: 30px;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.profile-card label {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.profile-card p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty {
+    text-align: center;
+    color: #94a3b8;
+    margin-top: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

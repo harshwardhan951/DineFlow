@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineFlow – Modern Start Page</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== Reset & Base ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            overflow-y: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ===== Header ===== */
+        header {
+            width: 100%;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: linear-gradient(pink, lightblue);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        /* Logo Section */
+        .logo-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-box img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .logo-box h1 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* Right Buttons */
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+
+        header .btn {
+            margin-left: 15px;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border: 2px solid #007BFF;
+            border-radius: 25px;
+            background: linear-gradient(135deg, orange, yellow);
+            color: black;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        header .btn:hover {
+            background-color: #007BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+
+       
+
+        /* ===== Hero Section ===== */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+            padding: 0 20px;
+            background: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1650&q=80') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.45); /* darker overlay for readability */
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+        }
+
+        .hero .feature-btn {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border: 2px solid #007BFF;
+            border-radius: 30px;
+            background: linear-gradient(135deg, orange,yellow);
+            color: black;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hero .feature-btn:hover {
+            background-color: #007BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 12px 0;
+            background: linear-gradient(pink, lightblue);
+            color: black;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            z-index: 100;
+        }
+
+
+        /* ===== Responsive ===== */
+        @media(max-width: 768px) {
+            header {
+                padding: 15px 30px;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero .feature-btn {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+        }
+
+        @media(max-width: 480px) {
+            header {
+                flex-direction: column;
+            }
+            header .btn {
+                margin: 5px 0;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 0.95rem;
+            }
+            .hero .feature-btn {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+    <div class="logo-box">
+        <img src="assets/Images/dine.jpg" alt="DineFlow Logo">
+        <h1>DineFlow</h1>
+    </div>
+
+    <div class="nav-actions">
+        <a href="login.php" class="btn">Login</a>
+        <a href="register.php" class="btn">Register</a>
+    </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to DineFlow</h1>
+            <p>Seamlessly browse multiple hotels, explore menus, and place your orders online with our modern digital platform. Enjoy convenience and premium experience at your fingertips.</p>
+            <a href="register.php" class="feature-btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Reserved by DineFlow
+    </footer>
+
+</body>
+</html>
