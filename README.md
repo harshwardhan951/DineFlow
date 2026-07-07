@@ -175,8 +175,6 @@ DineFlow/
 
 # 📸 Screenshots
 
-## 📸 Screenshots
-
 | Home | Customer Dashboard |
 |------|--------------------|
 | <img src="screenshots/home.png" width="450"> | <img src="screenshots/customer_dashboard.png" width="450"> |
