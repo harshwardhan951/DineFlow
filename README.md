@@ -214,13 +214,13 @@ Clone the repository
 git clone https://github.com/harshwardhan951/dineflow.git
 ```
 
-Move the project into your XAMPP `htdocs` folder.
+- Move the project into your XAMPP `htdocs` folder.
 
-Import the provided SQL database into MySQL.
+- Import the provided SQL database into MySQL.
 
-Start Apache and MySQL from XAMPP.
+- Start Apache and MySQL from XAMPP.
 
-Open the project in your browser:
+- Open the project in your browser:
 
 ```text
 http://localhost/dineflow
@@ -262,9 +262,7 @@ This project is licensed under the **MIT License**.
 
 # 📬 Contact
 
-### 👨‍💻 Developed by
-
-**Harshwardhan Malode**
+### 👨‍💻 Developed by - **Harshwardhan Malode**
 
 📧 Email: harshwardhanmalode798@gmail.com
 
